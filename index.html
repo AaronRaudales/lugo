@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lugo</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div>
+    <h2 class="texto estilo mt-4" style="color: #552A83!important">¡Hola Pedro!</h2>
+    <p id="new-texto">¿Que necesitas?</p>
+  </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: #552A83!important">
+        <a class="navbar-brand texto estilo" href="#" >lugo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <select class="form-control mr-3" id="usuarioActual" onchange="cambiarUsuario();">
+                    
+                </select>
+                <button id="button1"class="my-2 my-sm-0" type="button" data-toggle="modal" data-target="#modalVerOrdenes" onclick="informacionPedido()">Ver ordenes</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <main role="main" class="container">
+        <div class="row" id="categorias">
+          
+        </div>
+    </main><!-- /.container -->
+
+    <!-- Modal para la consulta de clientes-->
+<div class="modal fade" id="modalVerOrdenes" tabindex="-1" role="dialog" aria-labelledby="modalVerOrdenesLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header Margen">
+          <h5 class="modal-title" id="modalVerOrdenesLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" id="PedidoUsuario">
+            
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button1"  onclick="cerrar()" id="button1">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para el producto-->
+<div class="modal fade" id="modalVerEmpresa" tabindex="-1" role="dialog" aria-labelledby="modalVerEmpresaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header Margen">
+          <h5 class="modal-title " id="modalVerEmpresaLabel">Restaurantes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" id="empresas">
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para el pedido -->
+<div class="modal fade" id="modalNuevoPedido" tabindex="-1" aria-labelledby="modalNuevoPedidoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row" id="pedidos">
+           
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button"  onclick="cerrar()" id="button1">Procesar Orden</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+
+    background-color: #9482C4;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto{
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+}
+
+#new-texto{
+    margin-left: 200px;
+    color: #472966;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.estilo{
+    margin-left: 200px;
+    font-size: 35px;
+}
+
+
+#picture{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+/*Boton Ver Orden*/
+#button1{
+    border-radius: 17px;
+    height: 35px;
+     font-size: 13px;
+     background-color: #472966;
+     color: #fff;
+     width: 140px;
+     border: 0px;
+     cursor: pointer;/*Para poner la manito*/
+}
+
+/*Select Persona*/
+
+#cuadros{
+    width: 220px;
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.Margen{
+    background-color: #472966;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+}
+
+.contorno{
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-width: 1px ;
+    border-color: #DDDFE2;
+    border-radius: 5px;
+    
+}
+
+.texto-negrita{
+    color: #472966;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#modalVerEmpresa{
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+#modalNuevoPedido{
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+#modalVerOrdenes{
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+
+
+.centrado{
+    position: absolute;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.linea {
+    border-top: 1px solid #c9cccf;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 15px auto 0 auto;
+    margin-left: 10px;
+  }
